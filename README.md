@@ -1,7 +1,8 @@
 
 <h1 style="color:#1589F0;">Demo Project</h1>
 In this project you will use the Gui Maker mobile app to 
-control a remote webcam  
+control a remote webcam
+
 Find the guide to the Gui Maker here: https://guimaker.app
 
 <!-- !['dashboard'](images/camera-dashboard.png) -->
@@ -59,8 +60,8 @@ Let's say:
 - Your project name is "camera"
 - The destination folder on the Pi is /home/pi
 - The Pi ip address is 10.0.0.30
-- username is 'pi'
-Run:  scp -r camera pi@10.0.0.30:/home/pi
+  
+Run:  ``` scp -r camera pi@10.0.0.30:/home/pi ```
 
 ## 5 Run the setup.sh script to complete the setup
 SSH to the raspberry, cd to your project folder then run:
