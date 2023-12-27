@@ -3,7 +3,7 @@
 In this project you will use the Gui Maker mobile app to 
 control a remote webcam
 
-Find the guide to the Gui Maker here: https://guimaker.app
+Find the guide to the Gui Maker app here: https://guimaker.app
 
 <!-- !['dashboard'](images/camera-dashboard.png) -->
 &nbsp;&nbsp;&nbsp;
@@ -20,7 +20,7 @@ First download the project to your pc, next
 1. Copy your database config to the firebase-config.json file
 2. Edit the key-filename.json
 3. Edit the environment variables in dash.env
-4. Copy the project folde to your Raspbery Pi
+4. Copy the project folder to your Raspbery Pi
 5. SSH to your Raspberry Pi and run the setup.sh script to complete the setup
 
 ## 1 Copy the Firebase database config to firebase-config.json
@@ -92,7 +92,7 @@ The script will:
   - user-name
   - path2dash.env
 
-- Move camera.service file to the /etc/systemd/system folder
+- Move the camera.service file to the /etc/systemd/system folder
 - Enable the camera service to start at boot time
 - Start the camera service
 - Check the camera service status

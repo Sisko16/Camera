@@ -1,5 +1,5 @@
 '''
-Edit the "dash.env": Set FIREBASE_CONFIG to 'fire-base-config.json' 
+Edit "dash.env": Set FIREBASE_CONFIG to 'fire-base-config.json' 
 "dash.env" will be renamed to "camera.env" by the setup.sh script
 '''
 import sys
