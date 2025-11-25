@@ -1,11 +1,10 @@
 
 <h1 style="color:#1589F0;">Demo Project</h1>
-In this project you will use the Gui Maker mobile app to 
-control a remote webcam
+In this project you will use the GUI-Maker mobile app to 
+take a picture using a remote webcam, then display the picture to your app.
 
-Find the guide to the Gui Maker app here: https://guimaker.app
+Find the guide to the GUI-Maker app here: https://guimaker.app
 
-<!-- !['dashboard'](images/camera-dashboard.png) -->
 &nbsp;&nbsp;&nbsp;
 <img src="images/camera-dashboard.png" alt="Dashboard" width="200" height = "350"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -23,10 +22,18 @@ First download the project to your pc, next
 4. Copy the project folder to your Raspbery Pi
 5. SSH to your Raspberry Pi and run the setup.sh script to complete the setup
 
-## 1 Copy the Firebase database config to firebase-config.json
-- Log in to your Firebase console
-- Go to Project Settings, then scroll down
-- Copy the key-value pairs along with the curly brackets to the the firebase-config.json
+## 1 Copy the web app's Firbase configuration to your project
+- Log in to the Firebase console
+- Go to Project Settings > General,
+- Scroll down to:  //Your web app's Firebase configuration
+- Copy the key-value pairs along with the curly brackets
+- Paste to the firebase-config.json located in your project folder
+
+&nbsp;&nbsp;&nbsp;
+<img src="images/firebase-connect1.png" alt="Dashboard" width="200" height = "400"/>
+&nbsp;&nbsp;&nbsp;
+<img src="images/firebase-connect2.png" alt="Dashboard" width="200" height = "400"/>
+
 
 Note: setup.sh will wrap the keys with double quotes to make the firebase-config.json a valid json file
  
@@ -61,13 +68,18 @@ Let's say:
 - The destination folder on the Pi is /home/pi
 - The Pi ip address is 10.0.0.30
   
-Run:  ``` scp -r camera pi@10.0.0.30:/home/pi ```
+Run:  
+``` 
+scp -r camera pi@10.0.0.30:/home/pi 
+```
 
 ## 5 Run the setup.sh script to complete the setup
 SSH to the raspberry, cd to your project folder then run:
+```
 bash setup.sh
+```
 
-The script will:
+**Note: The script will:**
 - Set the project name to the project folder name
 - Set the project description
 - Install fswebcam
@@ -101,5 +113,6 @@ The script will:
 Check that the path and filenames are correctly spelled in:
   - camera.env
   - camera.service
+
 
 Keep in mind that dashboard names created in the mobile app are case sensitive
